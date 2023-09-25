@@ -16,7 +16,7 @@ body{
     width:100%;
     height:100vh;
     background-size: cover;
-    background-image:url(Contact_us.png);
+    background-image:url(images/Contact_us.png);
 }
 .container{
     max-width:1300px;
