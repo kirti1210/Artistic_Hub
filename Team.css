@@ -15,7 +15,7 @@ body{
     width:100%;
     height:100vh;
     background-size: cover;
-    background-image:url(Team.gif);
+    background-image:url(images/Team.gif);
 }
 .container{
     max-width:1300px;
