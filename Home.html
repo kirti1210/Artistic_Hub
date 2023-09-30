@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="home2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home2.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="#">Acrylic Paintings</a></li>
+                    <li><a href="#">Mandala Art</a></li>
+                    <li><a href="#">Landscape Paintings</a></li>
+                    <li><a href="#">Portrait Paintings</a></li>
+                    <li><a href="#">Sketch Art</a></li>
+                    <li><a href="#">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="images/banner.jpg">
+    </div> 
+    <div class="heading">
+        <h1>Categories        Of         Art </h1>
+    </div> 
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/acrylic painting.jpg" />
+                <div class="desc">
+                    Acrylic Paintings
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/mandala art.jpg" />
+                <div class="desc">
+                    Mandala Art
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/Landscape2.jpg" />
+                <div class="desc">
+                    Landscape Paintings
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/portrait.jpg" />
+                <div class="desc">
+                    Portrait Paintings
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/sketching2.jpg" />
+                <div class="desc">
+                    Sketch Art
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+                <img src="images/bookmark2.jpg" />
+                <div class="desc">
+                    Bookmark Collection
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+    
+
+    
+</body>
+</html>
