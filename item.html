@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="item.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home2.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="#">Acrylic Paintings</a></li>
+                    <li><a href="#">Mandala Art</a></li>
+                    <li><a href="#">Landscape Paintings</a></li>
+                    <li><a href="#">Portrait Paintings</a></li>
+                    <li><a href="#">Sketch Art</a></li>
+                    <li><a href="#">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="img">
+            <img src="acrylic_painting/ac-1.jpg" alt="" onclick="clk(this)"><br>
+            <img src="acrylic_painting/A-1.jpg" alt="" onclick="clk(this)">
+        </div>
+        <div class="left">
+            <img src="acrylic_painting/ac-1.jpg" id="imgs" alt="">
+        </div>
+        <div class="right">
+            <div class="url">
+                <a href="home2.html">Home</a> > <a href="acrylic.html">Acrylic Painting</a> > <a href="item.html">Product</a>
+            </div>
+            <h1>Acrylic_Painting_1</h1>
+            <h1>$999</h1>
+            <i class="fasfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <h3>Category: Acrylic Painting</h3>
+            <p>Description.....</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati doloribus voluptates accusantium quasi, cumque praesentium quia necessitatibus ut, suscipit provident consequatur, a voluptas aperiam exercitationem. Natus deserunt molestias iusto.</p>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h2> More Like This</h2>
+    </div>
+    <div class="wrapper">
+        <figure>
+            <div class="hover-animation">
+                <img src="acrylic_painting/A-89.jpg" class="img-back">
+                <img src="acrylic_painting/ac-8.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Painting-8</h2>
+                <p>Price --</p>
+                <a href="#">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="acrylic_painting/A-7.jpg" class="img-back">
+                <img src="acrylic_painting/ac-7.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Painting-7</h2>
+                <p>Price --</p>
+                <a href="#">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="acrylic_painting/A-89.jpg" class="img-back">
+                <img src="acrylic_painting/ac-9.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Painting-9</h2>
+                <p>Price --</p>
+                <a href="#">View More</a>
+            </figcaption>
+        </figure>
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
+    
+</body>
+</html>
