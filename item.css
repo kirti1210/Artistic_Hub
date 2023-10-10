@@ -152,7 +152,6 @@ figcaption{
     text-align: center;
 }
 figcaption h2{
-    text-transform: uppercase;
     margin-top: 50px;
     margin-bottom: 10px;
 }
@@ -162,13 +161,18 @@ figcaption p{
     font-size: 18px;
 }
 figcaption a{
-    background:tomato;
+    background:red;
     text-decoration: none;
     color:#fff;
-    text-transform: uppercase;
     display:inline-block;
     margin-top:15px;
     padding:10px 30px;
+    font-weight:bold ;
+}
+figcaption a:hover{
+    background-color:goldenrod;
+    cursor: pointer;
+    color:black;
 }
 .hover-animation{
     position:relative;
