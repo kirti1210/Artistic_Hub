@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEM-1</title>
+    <link rel="stylesheet" href="item.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="acrylic.html">Acrylic Paintings</a></li>
+                    <li><a href="mandala.html">Mandala Art</a></li>
+                    <li><a href="landscape.html">Landscape Paintings</a></li>
+                    <li><a href="portrait.html">Portrait Paintings</a></li>
+                    <li><a href="sketch.html">Sketch Art</a></li>
+                    <li><a href="bookmark.html">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="img">
+            <img src="item/Item-72.jpg" alt="" onclick="clk(this)"><br>
+            <img src="item/Item-f-72.jpg" alt="" onclick="clk(this)"><br>
+        </div>
+        <div class="left">
+            <img src="item/Item-72.jpg" id="imgs" alt="">
+        </div>
+        <div class="right">
+            <div class="url">
+                <a href="home.html">Home</a> > <a href="sketch.html">Sketch Art</a> > <a href="item.html">Product</a>
+            </div>
+            <h1>Portrait sketch of a Beautiful Girl</h1>
+            <h1>Not Available</h1>
+            <i class="fasfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+            <h3>Category: Sketch Art</h3>
+            
+            <p>The girl sketch depicts a moment frozen in time, capturing the essence of feminine grace and beauty. The lines are delicately drawn to form the contours of her face, with a focus on expressive eyes and flowing hair that suggests movement. The artist skillfully uses shading to add depth and dimension, allowing the viewer to connect with the subject emotionally. The simplicity of the sketch accentuates the purity of the form, making it a timeless and evocative representation of the feminine spirit.
+                <br>A4 size
+                
+                
++                </p>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h2> More Like This</h2>
+    </div>
+    <div class="wrapper">
+        
+ 
+       
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-73.jpg" class="img-back">
+                <img src="item/Item-73.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Portrait sketch</h2>
+                
+                <a href="item73.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-74.jpg" class="img-back">
+                <img src="item/Item-74.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Portrait Sketch</h2>
+             
+                <a href="item74.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-75.jpg" class="img-back">
+                <img src="item/Item-75.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Blossoming Traditions</h2>
+               
+                <a href="item75.html">View More</a>
+            </figcaption>
+        </figure>
+         
+        
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
+    
+</body>
+</html>

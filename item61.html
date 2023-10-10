@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEM-1</title>
+    <link rel="stylesheet" href="item.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="acrylic.html">Acrylic Paintings</a></li>
+                    <li><a href="mandala.html">Mandala Art</a></li>
+                    <li><a href="landscape.html">Landscape Paintings</a></li>
+                    <li><a href="portrait.html">Portrait Paintings</a></li>
+                    <li><a href="sketch.html">Sketch Art</a></li>
+                    <li><a href="bookmark.html">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="img">
+            <img src="item/Item-61.jpg" alt="" onclick="clk(this)"><br>
+            <img src="item/Item-f-61.jpg" alt="" onclick="clk(this)">
+        </div>
+        <div class="left">
+            <img src="item/Item-61.jpg" id="imgs" alt="">
+        </div>
+        <div class="right">
+            <div class="url">
+                <a href="home.html">Home</a> > <a href="portraits.html">Portraits</a> > <a href="item.html">Product</a>
+            </div>
+            <h1>BTS V (Kim Taehyung)</h1>
+            <h1>Rs. 3500</h1>
+            <i class="fasfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+            <h3>Category: Portraits</h3>
+            
+            <p>BTS V side face painting is a captivating portrayal of the South Korean artist, capturing the charismatic and distinctive features of Kim Taehyung from the popular K-pop group BTS. The artwork focuses on V's profile, highlighting his sculpted jawline, expressive eyes, and signature hairstyle. The use of color and shading accentuates the nuances of his facial structure, creating a lifelike representation that captures the essence of V's allure. This side-face painting not only celebrates the individuality of the artist but also showcases the skill of the painter in bringing forth the unique charm and personality of BTS V in a visually striking and evocative manner.
+                <br>Canvas size: 10
+                
+                
+                
+              </p>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h2> More Like This</h2>
+    </div>
+    <div class="wrapper">
+        
+      
+     
+       
+       
+       
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-62.jpg" class="img-back">
+                <img src="item/Item-62.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Tae-Tae (Kim Taehyung)</h2>
+               
+                <a href="item62.html">View More</a>
+            </figcaption>
+        </figure>
+       
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
+    
+</body>
+</html>
