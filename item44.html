@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEM-1</title>
+    <link rel="stylesheet" href="item.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="acrylic.html">Acrylic Paintings</a></li>
+                    <li><a href="mandala.html">Mandala Art</a></li>
+                    <li><a href="landscape.html">Landscape Paintings</a></li>
+                    <li><a href="portrait.html">Portrait Paintings</a></li>
+                    <li><a href="sketch.html">Sketch Art</a></li>
+                    <li><a href="bookmark.html">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="img">
+            <img src="item/Item-44.jpg" alt="" onclick="clk(this)"><br>
+            <img src="item/Item-f-44.jpg" alt="" onclick="clk(this)">
+        </div>
+        <div class="left">
+            <img src="item/Item-44.jpg" id="imgs" alt="">
+        </div>
+        <div class="right">
+            <div class="url">
+                <a href="home.html">Home</a> > <a href="landscape.html">Landscape Painting</a> > <a href="item.html">Product</a>
+            </div>
+            <h1>Winter Wonderland Hearth</h1>
+            <h1>Rs. 4500</h1>
+            <i class="fasfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+            <h3>Category: Landscape Painting</h3>
+            
+            <p>"In 'Winter Wonderland Hearth,' a snowy forest becomes a tranquil backdrop to a warmly lit house on Christmas Eve. The snow-laden trees form a serene landscape, and the glow emanating from the house evokes a cozy and festive atmosphere. The painting encapsulates the magical ambiance of a peaceful winter night, where the beauty of nature harmonizes with the warmth of holiday cheer."
+
+                <br>Canvas size 12*12 (30*30 cm)
+                
+                
+              </p>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h2> More Like This</h2>
+    </div>
+    <div class="wrapper">
+        
+      
+       
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-45.jpg" class="img-back">
+                <img src="item/Item-45.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Rainbow Serenade</h2>
+                
+                <a href="item45.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-27.jpg" class="img-back">
+                <img src="item/Item-27.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Ethereal Cascades</h2>
+             
+                <a href="item27.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-24.jpg" class="img-back">
+                <img src="item/Item-24.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Winter's Embrace</h2>
+               
+                <a href="item24.html">View More</a>
+            </figcaption>
+        </figure>
+                
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
+    
+</body>
+</html>

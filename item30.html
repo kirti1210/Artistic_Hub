@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEM-1</title>
+    <link rel="stylesheet" href="item.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="acrylic.html">Acrylic Paintings</a></li>
+                    <li><a href="mandala.html">Mandala Art</a></li>
+                    <li><a href="landscape.html">Landscape Paintings</a></li>
+                    <li><a href="portrait.html">Portrait Paintings</a></li>
+                    <li><a href="sketch.html">Sketch Art</a></li>
+                    <li><a href="bookmark.html">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="img">
+            <img src="item/Item-30.jpg" alt="" onclick="clk(this)"><br>
+            <img src="item/Item-f-30.jpg" alt="" onclick="clk(this)">
+        </div>
+        <div class="left">
+            <img src="item/Item-30.jpg" id="imgs" alt="">
+        </div>
+        <div class="right">
+            <div class="url">
+                <a href="home.html">Home</a> > <a href="landscape.html">Landscape Painting</a> > <a href="item.html">Product</a>
+            </div>
+            <h1>Verdant Giants</h1>
+            <h1>Rs. 4000</h1>
+            <i class="fasfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+            <h3>Category: Landscape Painting</h3>
+            
+            <p>"In 'Verdant Giants,' the lush green expanse of a thriving forest unfolds, dominated by two majestic trees that stand as sentinels of nature's grandeur. The play of sunlight filters through the dense foliage, casting dappled shadows on the forest floor. This painting captures the timeless beauty and tranquility of a thriving woodland, where the towering trees command a sense of awe and reverence."
+                <br>Canvas size 12*16 (30*40 cm)
+                
+              </p>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h2> More Like This</h2>
+    </div>
+    <div class="wrapper">
+        
+      
+     
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-31.jpg" class="img-back">
+                <img src="item/Item-31.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Nocturnal Dreamscape</h2>
+               
+                <a href="item31.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-32.jpg" class="img-back">
+                <img src="item/Item-32.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Autumn's Embrace</h2>
+                
+                <a href="item32.html">View More</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation">
+                <img src="item/Item-f-33.jpg" class="img-back">
+                <img src="item/Item-33.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h2>Sunset Serenity</h2>
+             
+                <a href="item33.html">View More</a>
+            </figcaption>
+        </figure>
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
+    
+</body>
+</html>
