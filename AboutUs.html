@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="AboutUs.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="home.html"><img src="images/logo.jpg"></a></li>
+            <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul>
+                    <li><a href="acrylic.html">Acrylic Paintings</a></li>
+                    <li><a href="mandala.html">Mandala Art</a></li>
+                    <li><a href="landscape.html">Landscape Paintings</a></li>
+                    <li><a href="portrait.html">Portrait Paintings</a></li>
+                    <li><a href="sketch.html">Sketch Art</a></li>
+                    <li><a href="bookmark.html">Bookmark Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+    </div>
+    <div id="header">
+    </div>
+    <div class="containers">
+        <div class="work">
+            <a href="motive.html">
+                <img src="images/our_motive.png">
+                <div class="desc">Our Motive</div>
+            </a>    
+        </div>
+        <div class="work">
+            <a href=" Differ2.html">
+            <img src="images/differ_changed.png">
+            <div class="desc">How We Differ </div> 
+            </a>    
+        </div>
+        <div class="work">
+            <a href = "Team.html">
+            <img src="images/team.png">
+            <div class="desc">Our Team</div>
+        </a>
+        </div>    
+    </div>
+    
+    <div id="ques">
+        <div class="wrapper">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq ">
+                <button class="accordion">
+                    What is Artistic Hub all about?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>Artistic Hub is a vibrant online community dedicated to celebrating and promoting artistic creativity in all its forms. We provide a platform for atists, enthusiasts, and anyone with a passion for creativity to connect, showcase their work, learn and collaborate.</p>
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    How can I join Artistic Hub?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>Joining Artistic Hub is simple and free! Just click on the "Sign Up" button and follow the prompts to create your account. Once registered, you'll gain access to our community, events, resources, and more.</p>    
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    What kind of art is featured on the platform?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>We pride ourselves on featuring a diverse range of artistic styles and mediums. From traditional painting and sculpture to digital art, and beyond, you'll find a tapestry of creative expression that spans various genres.</p>
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    Can I showcase my art work on Artistic Hub?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>Absolutely! We encourage artists of all levels to showcase their work on our platform. Whether you're a seasoned professional or just starting, Artistic Hub is the perfect platform to share your creations with a like-minded audience.
+                    </p>
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    Are there any submission guidelines for artwork?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>While we embrace various forms of art, we do have some general guidelines to ensure a positive experience for all members. Artwork should be respectful, original, and adhere to our community standards. Offensive or inappropriate content will not be permitted.
+                    </p>
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    Are there any membership fees?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p> No, membership at Artistic Hub is completely free. We believe in providing an inclusive platform for all artists and art enthusiasts.
+                    </p>
+                </div>
+            </div>
+            <div class="faq ">
+                <button class="accordion">
+                    How do I contact support if I have issues?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p> If you encounter any issues or have questions, you can reach out to our dedicated support team by visiting the "Contact Us" page. We're here to assist you every step of the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i=0;i<acc.length;i++){
+            acc[i].addEventListener("click",function
+            (){
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+                var pannel=this.nextElementSibling;
+                if(pannel.style.display ==="block"){
+                    pannel.style.display="none";
+                }
+                else{
+                    pannel.style.display="block";
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>
