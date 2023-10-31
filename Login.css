@@ -1,119 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&family=Roboto+Slab&family=Satisfy&display=swap');
 *{
-    margin: 0;
+    margin:0;
     padding:0;
-    font-family: sans-serif;
-
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
 }
-body{
-    background-image:url(images/background.png);
-    background-size:cover;
-    
-    font-family: sans-serif;
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
-.hero {
 
-    height: 100%;
-    width: 100%;
-    background-image: linear- 
-    gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(banner.jpg);
-    background-position: center;
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.3rem;
+}
+p{
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+button,input[type="submit"]{
+    border:.1rem solid #530301;
+    outline:none;
+    padding:.6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform:capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color:#530301;
+    cursor:pointer;
+}
+.container .logo a{
+    width:1200px;
+}
+
+.container .logo a img{
+    width:90px;
+    margin-top: 15px;
+    margin-left:50px;
+    margin-right: 550px;
+}
+.registration-header{
+    height:120vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/abstract_background.jpg);
     background-size: cover;
-    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.form-box {
-
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-    overflow: hidden;
-}
-
-.button-box{
-    width: 220px;
-    margin: 35px auto; 
-    position: relative; 
-    box-shadow: 0 20px 9px #ff61241f; 
-    border-radius: 30px; 
-}
-    
-.toggle-btn{ 
-    padding: 10px 30px; 
-    cursor: pointer;
-    background: transparent; 
-    border: 0; 
-    outline: none; 
-    position: relative;
+.container{
+    height:15vh;
+    width:100%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
-.btn{
-    top:0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: linear-gradient(to right, #ff105f, #ffad06);
-    border-radius: 30px;
-    transition: .5s;
+ul{
+    list-style:none;
+    display:flex;
+    gap:2rem;
+    font-size:1.7rem;
+    font-weight:600;
+    margin-right: 20px;
 }
-.toggle-btn:hover{
-    color:#ff105f;
+li > a{
+    color:#3d0203;
+    text-decoration:none;
+}
+li >a:hover{
+    color:rgb(245, 56, 56);
+}
+main{
+    min-height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration {
+    min-height:20rem;
+    min-width: 20vw;
+    background-color: #fff2f3;
+}
+.grid-two--column{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr) ;
+}
+.registration .form-text{
+    height:inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.03),rgba(0,0,0,0.03)),url(images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    padding:3rem 2rem;
+}
+.login .form-text{
+        height:inherit;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/image2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color:#fff;
+        padding:3rem 2rem;
+    
+}
+.form-text p{
+    width:30ch;
+    text-align: center;
+    margin:2rem 0 3rem 0;
+}
+.form-text button{
+    background-color: #fff2f3;
+    color:#530301;
+}
+.form-text button:hover{
+    background-color: transparent;
+    color:#fff;
+}
+.registration-form, .login-form{
+    width:100%;   
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.registration-form p, .login-form p{
+    margin:1rem 0 0.7rem 0;
 }
 .social-icons{
-    margin:30px auto;
-    text-align: center;
+    display: flex;
+    gap:2.1rem;
+    margin:1rem 0 0.6rem 0;
 }
-.social-icon img{
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: 0 0 20px 0 #7f7f7f3d;
-    cursor: pointer;
-    border-radius: 50%;
+.social-icons a img{
+    width:3rem;
+    height:3rem;
+
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
 }
-.input-group{
-    top: 150px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-    
+
+.form-group {
+    margin: 10px 0;
+    text-align: left;
 }
-.input-field{
+label {
+    font-weight: bold;
+    font-size: small;
+}
+input[type="text"],
+input[type="password"] {
     width: 100%;
-    padding: 10px 0;  
+    padding: 10px;
     margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
+.form-group button{
+    background-color: #fff2f3;
+    color:#530301;
+}
+.form-group button:hover{
+    background-color: transparent;
+    color:#530301;
+}
+.error {
+    color: red;
+    font-size:small ;
+}
+#passwordStrength {
+    font-size: 12px;
+}
+.sign-up {
+    display: none;
+}
+
+.toggle-button {
     cursor: pointer;
-    display: block;
-    margin: auto;
-    background: linear-gradient(to right, #ff1e5f, #ffad06);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}  
-.check-box{
-    margin: 10px 10px 10px 10px ;
+    color: #007bff;
+    text-decoration: underline;
 }
-.span{
-    color: #777;
-    font-size: 5px;
-    bottom: 68px;
-    position: absolute;
+.password-strength {
+    color: #e67e22;
 }
-#login{ 
-    left: 50px;
+.registration:not(.login-section--display){
+    display:none;
 }
-#signup{
-    left: 450px;
+.login-section--display .registration{
+    display:block ;
+}
+.login-section--display .login{
+    display: none;
 }
